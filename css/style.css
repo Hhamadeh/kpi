@@ -1,0 +1,524 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Base styles ****/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  padding: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7em;
+  background: #444444;
+  color: #FFF;
+}
+
+h1, h2, h3, p, ul, ol, pre, dl {
+  margin-bottom: 1.0em;
+}
+
+h1, h2, #super-list, .element, .tagline, #index-list, 
+.super-list .link {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3 { font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.1em;
+  text-align:center;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+a,
+a code {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 12px;
+  color: #E7E5E5;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px 8px 20px;
+  margin: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-shadow: 2px 2px 3px #000000;}
+
+a:hover,
+a:hover code { 
+  
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+  background: black;
+}
+
+a img { border: none; }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  border-left: 1px solid #333;
+  font-style: italic;
+}
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  height:100%;
+  padding: 1px;
+  margin-bottom: 20px;
+}
+.titles{
+
+}
+.element {
+  width: 100px;
+  height: 70px;
+  margin: 0px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  verticalalign:middle;
+   vertical-align: middle;
+  background: #888;
+  color: #222;
+  -webkit-border-top-right-radius: 1.2em;
+      -moz-border-radius-topright: 1.2em;
+          border-top-right-radius: 1.2em;
+}
+
+.element.alkali          { background: #b4ddb4;
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(0%,#83c783), color-stop(2%,#52b152), color-stop(39%,#008a00), color-stop(60%,#005700), color-stop(92%,#002400));
+background: -webkit-linear-gradient(top,  #b4ddb4 0%,#83c783 0%,#52b152 2%,#008a00 39%,#005700 60%,#002400 92%);
+background: -o-linear-gradient(top,  #b4ddb4 0%,#83c783 0%,#52b152 2%,#008a00 39%,#005700 60%,#002400 92%);
+
+background: linear-gradient(to bottom,  #b4ddb4 0%,#83c783 0%,#52b152 2%,#008a00 39%,#005700 60%,#002400 92%);
+
+
+-webkit-border-radius: 4px;
+        border-radius: 0px;
+		 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border: solid 1px #000001;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  
+
+}
+.element.alkaline-earth  { background: #F80; background: hsl(  36, 52%, 50%);
+
+		 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); background-color: #eeeeee;
+background: #e0000e;
+background: -moz-linear-gradient(top,  #e0000e 1%, #980021 59%, #590005 94%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e0000e), color-stop(59%,#980021), color-stop(94%,#590005));
+background: -webkit-linear-gradient(top,  #e0000e 1%,#980021 59%,#590005 94%);
+background: -o-linear-gradient(top,  #e0000e 1%,#980021 59%,#590005 94%);
+background: -ms-linear-gradient(top,  #e0000e 1%,#980021 59%,#590005 94%);
+background: linear-gradient(to bottom,  #e0000e 1%,#980021 59%,#590005 94%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0000e', endColorstr='#590005',GradientType=0 );
+
+
+
+
+
+-webkit-border-radius: 4px;
+        border-radius: 0px;
+		 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border: solid 1px #000001;
+     -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.2);
+ 
+	}
+.element.lanthanoid      { background: #FF0; background: hsl(  72,52%, 50%); 
+background: #0ba903;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0ba903), color-stop(44%,#099002), color-stop(100%,#056e00));
+background: -webkit-linear-gradient(top,  #0ba903 0%,#099002 44%,#056e00 100%);
+background: linear-gradient(to bottom,  #0ba903 0%,#099002 44%,#056e00 100%);
+
+
+-webkit-border-radius: 4px;
+        border-radius: 1px;
+		 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border: solid 1px #000001;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.element.actinoid        { background: #0F0; background: hsl( 220, 100%, 50%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0ba903), color-stop(44%,#099002), color-stop(100%,#056e00));
+background: -webkit-linear-gradient(top,  #0ba903 0%,#099002 44%,#056e00 100%);
+background: linear-gradient(to bottom,  #0ba903 0%,#099002 44%,#056e00 100%);
+-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);}
+.element.transition      { background: #0F8; background: hsl( 144, 100%, 50%); -webkit-border-radius: 1px;
+    
+	background: #cd012d;
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cd012d), color-stop(44%,#b60028), color-stop(100%,#960020));
+background: -webkit-linear-gradient(top,  #cd012d 0%,#b60028 44%,#960020 100%);
+background: -o-linear-gradient(top,  #cd012d 0%,#b60028 44%,#960020 100%);
+
+background: linear-gradient(to bottom,  #cd012d 0%,#b60028 44%,#960020 100%);
+
+
+	
+	
+	
+	
+	
+	-moz-border-radius: 4px;
+    border-radius: 1.1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);}
+.element.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1.1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);}
+.element.metalloid       { background: #08F; background: hsl( 216, 100%, 50%);-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); }
+.element.other.nonmetal  { background: #00F; background: hsl( 252, 100%, 50%);-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); }
+.element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);}
+.element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%);-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1px;
+    border: solid 1px #000001;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+
+.element * {
+  top: 0em;
+  margin: 0; 
+  position:relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.element .symbol {
+   
+  font-size: 1.2em;
+  line-height: 1.0em;
+  color: #FFF;
+}
+.element.large .symbol {
+  font-size: 3.5em;
+  text-shadow: 0 0 3.7em #8F7;
+   visibility:hidden;
+   text-align: left;
+}
+
+.element.fake .symbol {
+  color: #000;
+}
+
+.element .name {
+  text-align: center;
+ 
+  font-size: 0.81em;
+   color: #FFF;
+}
+
+.element .weight {
+
+}
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0,0%,0%,.5);
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.variable-sizes .element.width2 { width: 230px; }
+
+.variable-sizes .element.height2 { height: 230px; }
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2.0em;
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+  font-size: 3.0em;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  z-index: 100;
+-moz-box-shadow: 0 0 9px #333;
+-webkit-box-shadow: 0 0 9px#333;
+box-shadow: 0 0 9px #333;
+}
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;
+  -webkit-transform: rotate3d(1px, 1px, 4px);
+}
+
+
+
+.clickable .element.large h4 {
+visibility:hidden;
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;
+  -webkit-transform: rotate3d(1px, 1px, 4px);
+}
+
+.clickable .element:hover  { 
+ z-index: 100;
+  box-shadow:   0 0 10px white  ;
+  -webkit-transform: rotate3d(1px, 1px, 4px);
+}
+
+.clickable .element:hover h2 {
+  color: white;
+
+}
+
+/**** Example Options ****/
+
+#options {
+  padding-bottom: 1.0em;
+}
+
+#options h3 {
+  margin-bottom: 0.2em;
+  font-size: 15px;
+}
+
+#options h4 { 
+  font-weight: bold;
+}
+
+#options ul {
+  margin: 0;
+  list-style: none;
+}
+
+#options ul ul {
+  margin-left: 1.5em;
+}
+
+
+
+/* Combination filter options*/
+
+#options .option-combo {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+#options .option-combo ul {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#options .option-combo h2,
+#options .option-combo h4 {
+  line-height: 34px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/**** Horizontal ****/
+
+.horizontal #container {
+  height: 80%;
+}
+
+#copy {
+  max-width: 640px;
+}
+
+
+
+
+
+
+
+
+
+#menu-bar {
+  margin: 0px 0px 0px 0px;
+  padding: 6px 6px 10px 6px;
+  
+  line-height: 100%;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+ 
+  box-shadow: 2px 2px 3px #222222;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+
+
+  border: solid 1px #000000;
+  
+background: #212121;
+background: -moz-linear-gradient(left,  #212121 0%, #878787 54%, #afafaf 90%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#212121), color-stop(54%,#878787), color-stop(90%,#afafaf));
+background: -webkit-linear-gradient(left,  #212121 0%,#878787 54%,#afafaf 90%);
+background: -o-linear-gradient(left,  #212121 0%,#878787 54%,#afafaf 90%);
+background: -ms-linear-gradient(left,  #212121 0%,#878787 54%,#afafaf 90%);
+background: linear-gradient(to right,  #212121 0%,#878787 54%,#afafaf 90%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#afafaf',GradientType=1 );
+
+
+
+}

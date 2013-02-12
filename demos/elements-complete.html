@@ -1,0 +1,1279 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 
+
+  <meta charset="utf-8" />
+  <title>Elements Complete Isotope Demo</title> 
+ <link rel="stylesheet" href="../css/style.css" />
+
+ 
+<script src="jquery.min.js"></script>
+<script src="jquery.csv.js"></script>
+ 
+<link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
+<script type="text/javascript" src="jquery.dropdown.js"></script>
+<script type="text/javascript"  src="dygraph-combined.js"></script>
+
+<script type="text/javascript"  src="jstat-1.0.0.min.js"></script>
+<script>
+  
+</script>
+</head>
+
+
+
+<body class="demos ">
+  
+<p style="
+position:relative;
+left:110px;
+top:10px;
+z-index:111;text-shadow: 2px 2px 3px #000000;font-size:1.5em;"> Operational KPI </p>
+
+<table id=contents style="width:100%;  " border>
+</table>
+ 
+  
+  <section id="content">
+    
+<table width='100%' height='100%'><tr>
+<td id='menu-bar' width='110px'>
+<section id="options" class="clearfix">
+
+  
+     
+	  <a href="#" data-dropdown="#dropdown-1">Filters</a></br>
+<div id="dropdown-1" class="dropdown-menu has-tip">
+      <ul id="filters" class="option-set clearfix" data-option-key="filter">
+        <table><tr><td><li><a href="#filter" data-option-value="*" class="selected">show all</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".metal">metal</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".transition">transition</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".post-transition">post-transition</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".nonmetal">nonmetal</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".inner-transition">inner-transition</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=".alkali, .alkaline-earth">alkali and alkaline-earth</a></li></td></tr>
+        <tr><td><li><a href="#filter" data-option-value=":not(.transition)">not transition</a></li></td></tr>
+       <tr><td> <li><a href="#filter" data-option-value=".metal:not(.transition)">metal but not transition</a></li></td></tr></table>
+      </ul>
+
+</div>
+  
+   
+  <a href="#" data-dropdown="#dropdown-2">Sort</a></br>
+<div id="dropdown-2" class="dropdown-menu has-tip">
+    <ul id="sort-by" class="option-set clearfix" data-option-key="sortBy">
+      <li><a href="#sortBy=original-order" data-option-value="original-order" class="selected" data>original-order</a></li>
+      <li><a href="#sortBy=name" data-option-value="name">name</a></li>
+      <li><a href="#sortBy=symbol" data-option-value="symbol">symbol</a></li>
+      <li><a href="#sortBy=number" data-option-value="number">number</a></li>
+      <li><a href="#sortBy=weight"  data-option-value="weight">weight</a></li>
+      <li><a href="#sortBy=category" data-option-value="category">category</a></li>
+      <li><a href="#sortBy=random" data-option-value="random">random</a></li>
+    </ul>
+</div>
+   <a href="#" data-dropdown="#dropdown-3">Sort Direction</a></br>
+<div id="dropdown-3" class="dropdown-menu has-tip">
+
+    <ul id="sort-direction" class="option-set clearfix" data-option-key="sortAscending">
+      <li><a href="#sortAscending=true" data-option-value="true" class="selected">sort ascending</a></li>
+      <li><a href="#sortAscending=false" data-option-value="false">sort descending</a></li>
+    </ul>
+
+</div>
+  
+ 
+  <a href="#" data-dropdown="#dropdown-4">Layout modes</a></br>
+<div id="dropdown-4" class="dropdown-menu has-tip">
+    <ul id="layouts" class="option-set clearfix" data-option-key="layoutMode">
+      <li><a href="#masonry" data-option-value="masonry" class="selected">masonry</a></li>
+      <li><a href="#fitRows" data-option-value="fitRows">fitRows</a></li>
+      <li><a href="#cellsByRow" data-option-value="cellsByRow">cellsByRow</a></li>
+      <li><a href="#straightDown" data-option-value="straightDown">straightDown</a></li>
+      <li><a href="#masonryHorizontal" data-option-value="masonryHorizontal" class="horizontal">masonryHorizontal</a></li>
+      <li><a href="#fitColumns" data-option-value="fitColumns" class="horizontal">fitColumns</a></li>
+      <li><a href="#cellsByColumn" data-option-value="cellsByColumn" class="horizontal">cellsByColumn</a></li>
+      <li><a href="#straightAcross" data-option-value="straightAcross" class="horizontal">straightAcross</a></li>
+    </ul>
+</div>
+
+
+
+</section> <!-- #options -->
+</td>
+
+<td width='100%' height ='800px'>
+
+<div id="container" class="clickable clearfix">
+  
+  
+ <!-----------------------------------------------Magnesium---------------------------------------------------------->       
+<div class="element  metal   " id="Mgg" data-symbol="Mg" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >Diesel Consumption</h4>
+     <h4  style="color:white;  class="weight"" id="perMg"></h4>
+      
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;line-height:1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">Diesel Consumption</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="Min" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="Min" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="Max" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="Maxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="Last_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="Last_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="bLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="bLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv4" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv4"),
+    "diesel.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#Last_value").text(last.toFixed(1));
+$("#bLast_value").text(blast.toFixed(1));
+$("#per").text((per * 100).toFixed(0) + '%');
+$("#perMg").text((per * 100).toFixed(0) + '%');
+$("#Max").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#Min").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per >0) {
+$("#Mgg").toggleClass("alkaline-earth");
+}
+else 
+{$("#Mgg").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------Magnesium---------------------------------------------------------->    
+    
+       
+
+<!-----------------------------------------------DG Jones Delayed---------------------------------------------------------->       
+<div class="element  metal   " id="DGDD" data-symbol="DGDD" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >DG Jones Delayed</h4>
+     <h4  style="color:white;"  class="weight" id="perDGDD"></h4>
+     
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);"><b>DG Jones Delayed</b></td> <td style="width:30%;vertical-align: top; "> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;text-shadow: 1px 1px 7px #000000;
+        filter: dropshadow(color=#000000, offx=1, offy=1);"  id="per_DGD"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="DGDMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="DGDMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="DGDMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="DGDMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="DGDLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="DGDLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="DGDbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="DGDbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv6" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv6"),
+    "dgd.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#DGDLast_value").text(last.toFixed(1));
+$("#DGDbLast_value").text(blast.toFixed(1));
+$("#perDGDD").text((per * 100).toFixed(0) + '%');
+$("#per_DGD").text((per * 100).toFixed(0) + '%');
+$("#DGDMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#DGDMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per >0) {
+$("#DGDD").toggleClass("alkaline-earth");
+}
+else 
+{$("#DGDD").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------DG Jones Delayed---------------------------------------------------------->    
+    
+
+
+<!-----------------------------------------------DG Jones Actioned---------------------------------------------------------->       
+<div class="element  metal   " id="DGDA" data-symbol="DGA" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >DG Jones Actioned</h4>
+     <h4  style="color:white;"  class="weight" id="perDGDA"></h4>
+
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">DG Jones Actioned</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per_DGDA"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="DGDAMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="DGDAMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="DGDAMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="DGDAMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="DGDALast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="DGDALast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="DGDAbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="DGDAbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv5" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv5"),
+    "dgaction.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#DGDALast_value").text(last.toFixed(1));
+$("#DGDAbLast_value").text(blast.toFixed(1));
+$("#perDGDA").text((per * 100).toFixed(0) + '%');
+$("#per_DGDA").text((per * 100).toFixed(0) + '%');
+$("#DGDAMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#DGDAMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per <0) {
+$("#DGDA").toggleClass("alkaline-earth");
+}
+else 
+{$("#DGDA").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------DG Jones Actioned---------------------------------------------------------->    
+
+	   
+   
+  
+    <!-----------------------------------------------Manual Sweep Ratio Working Hours---------------------------------------------------------->       
+<div class="element  metal   " id="MSRH" data-symbol="MSRH" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >Manual Sweep Ratio WH</h4>
+     <h4  style="color:white;"   class="weight" id="perMSRH"></h4>
+      
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">Manual Sweep Ratio WH</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per_MSRH"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="MSRHMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="MSRHMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="MSRHMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="MSRHMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="MSRHLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="MSRHLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="MSRHbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="MSRHbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv17" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv17"),
+    "mansw.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#MSRHLast_value").text(last.toFixed(1));
+$("#MSRHbLast_value").text(blast.toFixed(1));
+$("#perMSRH").text((per * 100).toFixed(0) + '%');
+$("#per_MSRH").text((per * 100).toFixed(0) + '%');
+$("#MSRHMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#MSRHMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per <0) {
+$("#MSRH").toggleClass("alkaline-earth");
+}
+else 
+{$("#MSRH").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------Manual Sweep Ratio Working Hours---------------------------------------------------------->    
+  
+    
+   
+       
+    
+	
+	 
+    <!-----------------------------------------------Bulky Ratio:Tons/Hr---------------------------------------------------------->       
+<div class="element  metal   " id="BRH" data-symbol="BRH" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >Bulky Ratio:Tons/Hr</h4>
+     <h4  style="color:white;"  class="weight" id="perBRH"></h4>
+   
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">Bulky Ratio:Tons/Hr</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per_BRH"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="BRHMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="BRHMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="BRHMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="BRHMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="BRHLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="BRHLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="BRHbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="BRHbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv27" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv27"),
+    "BW.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#BRHLast_value").text(last.toFixed(1));
+$("#BRHbLast_value").text(blast.toFixed(1));
+$("#perBRH").text((per * 100).toFixed(0) + '%');
+$("#per_BRH").text((per * 100).toFixed(0) + '%');
+$("#BRHMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#BRHMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per <0) {
+$("#BRH").toggleClass("alkaline-earth");
+}
+else 
+{$("#BRH").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------Bulky Ratio:Tons/Hr---------------------------------------------------------->    
+  
+    
+   
+	
+	
+     <!-----------------------------------------------Collect:Tons/Hr---------------------------------------------------------->       
+<div class="element  metal   " id="tnn" data-symbol="tnn" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >Collect Ratio:Tons/Hr</h4>
+     <h4  style="color:white;" class="weight" id="pertnn"></h4>
+     
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">Collect Ratio:Tons/Hr</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per_tnn"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="tnnMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="tnnMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="tnnMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="tnnMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="tnnLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="tnnLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="tnnbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="tnnbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv37" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv37"),
+    "CW.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#tnnLast_value").text(last.toFixed(1));
+$("#tnnbLast_value").text(blast.toFixed(1));
+$("#pertnn").text((per * 100).toFixed(0) + '%');
+$("#per_tnn").text((per * 100).toFixed(0) + '%');
+$("#tnnMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#tnnMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per <0) {
+$("#tnn").toggleClass("alkaline-earth");
+}
+else 
+{$("#tnn").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------Collect:Tons/Hr---------------------------------------------------------->    
+  
+   
+  
+    
+     <!-----------------------------------------------Manual Sweep Ratio:KM/Hr---------------------------------------------------------->       
+<div class="element  metal   " id="MSWK" data-symbol="MSWK" data-category="alkaline-earth">
+    	
+      <h4 style="color:white;" class="titles"  >Manual Sweep Ratio:KM/Hr</h4>
+     <h4  style="color:white;" class="weight" id="perMSWK"></h4>
+     
+	  <table style="padding:15px;border:0px solid black;width:1200px;" >
+	  <tr>	<td style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top; line-height:1.1em;text-shadow: 0px 0px 10px #616161;
+        filter: dropshadow(color=#616161, offx=0, offy=0);">Manual Sweep Ratio:KM/Hr</td> <td style="width:30%;vertical-align: top;"> <h2 class="name" style="width:30%;text-align:left; font-size: 1.1em; color:white; vertical-align: top;"  id="per_MSWK"></h2></td> <td style="text-align:right;width:40%;">
+	  <table style="width:100%;border:0px solid black; ">
+	  
+	  <tr><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="MSWKMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td><td ><p style="color:white;font-size: 0.3em; text-align:left;  "> Minimum KPI over period:  </p></td><td><p id="MSWKMin" style="color:white;font-size: 0.3em; text-align:right;  font-weight:bold;"></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="MSWKMax" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; ">Maximum KPI over period:  </p></td><td><p id="MSWKMaxjstat" style="color:white;font-size: 0.3em; text-align:right; font-weight:bold; "></p></td></tr>
+	  
+	  <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="MSWKLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> Last Value:  </p></td><td><p id="MSWKLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	  
+	   <tr><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="MSWKbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td><td><p style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; "> bLast Value:  </p></td><td><p id="MSWKbLast_value" style="color:white;font-size: 0.3em; text-align:right; "></p></td></tr>
+	 		  
+	  </table></td></tr>
+	   </table>
+	   <table style="padding:15px;border:0px solid black;width:1200px;">
+	  <tr><td>
+	  <div id="graphdiv47" 
+  style="width:1050px; height:320px; text-align:center; position:relative;"></div>
+<script type="text/javascript">
+ var colorSets = [
+        ['#FFD700', '#EE1111', '#8AE234'],
+        ['#444444', '#888888', '#DDDDDD'],
+        null
+      ];
+	  var data = new Array(); 
+ var data1 = new Array(); 
+ 
+  g2 = new Dygraph(
+    document.getElementById("graphdiv47"),
+    "MansWKM.csv", // path to CSV file
+    { fillGraph: true,
+	showRoller: true,
+        rollPeriod:1,
+		
+	showRangeSelector:true,
+	 colors:  colorSets[0],
+	 axisLineColor: '#BDBDBD',
+		 gridLineColor: '#BDBDBD',	
+		drawXGrid:false, 
+	rangeSelectorPlotFillColor: "",
+	
+	drawCallback: function(g, is_initial) {
+            if (!is_initial) return;
+
+            g.setAnnotations( [
+            {
+              series: "KPI_Value",
+              x: "2012-08-19",
+              shortText: "A",
+			  
+			  cssClass:"Annotate",
+			  width:16,
+			  height:20,
+			  tickHeight:75,
+			
+              text: "1929 Stock Market PeakIn the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until "
+            }
+            ] );
+			  for(var i=0;i<g["rawData_"].length;i++) 
+{ 
+        data[i] = g["rawData_"][i]; 
+		data1[i] = data[i][1]; 
+} ;
+
+var last=data1.pop();
+var last=data1.pop();
+var blast=data1.pop();
+var per=(last-blast)/blast;
+
+$("#MSWKLast_value").text(last.toFixed(1));
+$("#MSWKbLast_value").text(blast.toFixed(1));
+$("#perMSWK").text((per * 100).toFixed(0) + '%');
+$("#per_MSWK").text((per * 100).toFixed(0) + '%');
+$("#MSWKMax").text(((data1.sort()).pop()).toFixed(1));
+//$("#Maxjstat").text(min(data1));
+$("#MSWKMin").text(((data1.reverse()).pop()).toFixed(1));
+
+if (per <0) {
+$("#MSWK").toggleClass("alkaline-earth");
+}
+else 
+{$("#MSWK").toggleClass("alkali");}
+
+         }
+
+	
+	}         // options
+  );
+  
+</script>
+</td></tr>
+<tr><td >
+<p  id="desc" style="color:white;font-size: 0.4em; text-align:left; ">
+
+<ul>
+<li style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; ">a. balaalall</li>
+<li style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; ">b. fjskdfk sdkfgh skdjh</li>
+<li style="color:white;font-size: 0.3em; text-align:left; font-weight:bold; ">In the Videos launched in a modal appear to have incorrect z-index, and be positioned somehow relative to their parent container, rather than being presented in the center of a full screen overlay, as would be the expected behaviour. Also, some of the subsequent items are still shown, on top of the overlay. The overlay was working normally until Isotope was introduced.</li></p></td></tr>
+	</table></p>
+    </div>
+   <!-----------------------------------------------Manual Sweep Ratio:KM/Hr---------------------------------------------------------->    
+  
+  
+</div>
+</tr></td></table>
+
+
+<script src="../jquery.isotope.min.js"></script>
+
+<script>
+
+<!-- file read csv-->
+  
+  $(document).ready(function() {
+    if(isAPIAvailable()) {
+      $('#files').bind('change', handleFileSelect);
+    }
+  });
+
+  function isAPIAvailable() {
+    // Check for the various File API support.
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+      // Great success! All the File APIs are supported.
+      return true;
+    } else {
+      // source: File API availability - http://caniuse.com/#feat=fileapi
+      // source: <output> availability - http://html5doctor.com/the-output-element/
+      document.writeln('The HTML5 APIs used in this form are only available in the following browsers:<br />');
+      // 6.0 File API & 13.0 <output>
+      document.writeln(' - Google Chrome: 13.0 or later<br />');
+      // 3.6 File API & 6.0 <output>
+      document.writeln(' - Mozilla Firefox: 6.0 or later<br />');
+      // 10.0 File API & 10.0 <output>
+      document.writeln(' - Internet Explorer: Not supported (partial support expected in 10.0)<br />');
+      // ? File API & 5.1 <output>
+      document.writeln(' - Safari: Not supported<br />');
+      // ? File API & 9.2 <output>
+      document.writeln(' - Opera: Not supported');
+      return false;
+    }
+  }
+
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+    var file = files[0];
+
+    // read the file metadata
+    var output = ''
+        output += '<span style="font-weight:bold;">' + escape(file.name) + '</span><br />\n';
+        output += ' - FileType: ' + (file.type || 'n/a') + '<br />\n';
+        output += ' - FileSize: ' + file.size + ' bytes<br />\n';
+        output += ' - LastModified: ' + (file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() : 'n/a') + '<br />\n';
+
+    // read the file contents
+    printTable(file);
+
+    // post the results
+    $('#list').append(output);
+  }
+
+  function printTable(file) {
+    var reader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = function(event){
+      var csv = event.target.result;
+      var dataa = $.csv.toArrays(csv);
+      var html = '';
+	var datarow=[1,2];
+      for(var row in dataa) {
+        html += '<tr>\r\n';
+		$("#tnn").attr("class","element alkali   isotope-item");
+		//var difference=dataa[row][item]-dataa[row-1][item];
+		//$("#h2tnn").text(difference);
+		        for(var item in dataa[row]) {
+          html += '<td>' + dataa[row][item] + '</td>\r\n'; 
+
+		 
+        }
+		
+        html += '</tr>\r\n';
+		datarow[row]=dataa[row][3];
+      }var difference=dataa[row][item]-dataa[row-1][item];
+	  
+	  $("#tnnp").text(datarow);
+		$("#tnn").attr("class","element alkali   isotope-item");
+      $('#contents').html(html);
+    };
+    reader.onerror = function(){ alert('Unable to read ' + file.fileName); };
+  }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+  $(function(){
+    
+    var $container = $('#container');
+    
+    
+      // add randomish size classes
+      $container.find('.element').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+    
+    $container.isotope({
+	 resizesContainer:false,
+      itemSelector : '.element',
+      masonry : {
+        columnWidth : 0
+      },
+      masonryHorizontal : {
+        rowHeight: 80
+      },
+      cellsByRow : {
+        columnWidth : 240,
+        rowHeight : 240
+      },
+      cellsByColumn : {
+        columnWidth : 240,
+        rowHeight : 240
+      },
+      getSortData : {
+        symbol : function( $elem ) {
+          return $elem.attr('data-symbol');
+        },
+        category : function( $elem ) {
+          return $elem.attr('data-category');
+        },
+        number : function( $elem ) {
+          return parseInt( $elem.find('.number').text(), 10 );
+        },
+        weight : function( $elem ) {
+          return parseFloat( $elem.find('.weight').text().replace( /[\(\)]/g, '') );
+        },
+        name : function ( $elem ) {
+          return $elem.find('.name').text();
+        }
+      }
+    });
+    
+    
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+
+    
+      // change layout
+      var isHorizontal = false;
+      function changeLayoutMode( $link, options ) {
+        var wasHorizontal = isHorizontal;
+        isHorizontal = $link.hasClass('horizontal');
+
+        if ( wasHorizontal !== isHorizontal ) {
+          // orientation change
+          // need to do some clean up for transitions and sizes
+          var style = isHorizontal ? 
+            { height: '80%', width: $container.width() } : 
+            { width: 'auto' };
+          // stop any animation on container height / width
+          $container.filter(':animated').stop();
+          // disable transition, apply revised style
+          $container.addClass('no-transition').css( style );
+          setTimeout(function(){
+            $container.removeClass('no-transition').isotope( options );
+          }, 100 )
+        } else {
+          $container.isotope( options );
+        }
+      }
+
+
+    
+      // change size of clicked element
+      $container.delegate( '.element', 'click', function(){
+        $(this).toggleClass('large');
+        $container.isotope('reLayout');
+      });
+
+      // toggle variable sizes of all elements
+      $('#toggle-sizes').find('a').click(function(){
+        $container
+          .toggleClass('variable-sizes')
+          .isotope('reLayout');
+        return false;
+      });
+
+
+    
+      $('#insert a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.isotope( 'insert', $newEls );
+
+        return false;
+      });
+
+      $('#append a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.append( $newEls ).isotope( 'appended', $newEls );
+
+        return false;
+      });
+
+
+    var $sortBy = $('#sort-by');
+    $('#shuffle a').click(function(){
+      $container.isotope('shuffle');
+      $sortBy.find('.selected').removeClass('selected');
+      $sortBy.find('[data-option-value="random"]').addClass('selected');
+      return false;
+    });
+
+
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  $.extend( $.Isotope.prototype, {
+  
+    _categoryRowsReset : function() {
+      this.categoryRows = {
+        x : 0,
+        y : 0,
+        height : 0,
+        currentCategory : null
+      };
+    },
+  
+    _categoryRowsLayout : function( $elems ) {
+      var instance = this,
+          containerWidth = this.element.width(),
+          sortBy = this.options.sortBy,
+          props = this.categoryRows;
+      
+      $elems.each( function() {
+        var $this = $(this),
+            atomW = $this.outerWidth(true),
+            atomH = $this.outerHeight(true),
+            category = $.data( this, 'isotope-sort-data' )[ sortBy ],
+            x, y;
+      
+        if ( category !== props.currentCategory ) {
+          // new category, new row
+          props.x = 0;
+          props.height += props.currentCategory ? instance.options.categoryRows.gutter : 0;
+          props.y = props.height;
+          props.currentCategory = category;
+        } else if ( props.x !== 0 && atomW + props.x > containerWidth ) {
+          // if this element cannot fit in the current row
+          props.x = 0;
+          props.y = props.height;
+        } 
+      
+        // position the atom
+        instance._pushPosition( $this, props.x, props.y );
+  
+        props.height = Math.max( props.y + atomH, props.height );
+        props.x += atomW;
+  
+      });
+    },
+  
+    _categoryRowsGetContainerSize : function () {
+      return { height : this.categoryRows.height };
+    },
+  
+    _categoryRowsResizeChanged : function() {
+      return true;
+    }
+  
+  });
+  
+  $(function(){
+    
+    var $container = $('#container');
+    
+    
+      // add randomish size classes
+      $container.find('.element').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+    
+    $container.isotope({
+      itemSelector : '.element',
+      layoutMode : 'categoryRows',
+      categoryRows : {
+        gutter : 20
+      },
+      getSortData : {
+        category : function( $elem ) {
+          return $elem.attr('data-category');
+        }
+      },
+      sortBy: 'category'
+    });
+
+    
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+
+    
+      $('#insert a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.isotope( 'insert', $newEls );
+
+        return false;
+      });
+
+      $('#append a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.append( $newEls ).isotope( 'appended', $newEls );
+
+        return false;
+      });
+
+
+    // toggle variable sizes of all elements
+    $('#toggle-sizes').find('a').click(function(){
+      $container
+        .toggleClass('variable-sizes')
+        .isotope('reLayout');
+      return false;
+    });
+
+  });
+  
+  
+  
+  
+</script>
+    
+ 
+  </section> <!-- #content -->
+  
+
+</body>
+</html>

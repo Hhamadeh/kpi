@@ -1,0 +1,1008 @@
+      
+    <div class="element other nonmetal   " data-symbol="O" data-category="other">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">O</h3>
+      <h2 class="name">Oxygen</h2>
+      <p class="weight">15.9994</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Bk" data-category="actinoid">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Bk</h3>
+      <h2 class="name">Berkelium</h2>
+      <p class="weight">(247)</p>
+    </div>
+  
+    
+        
+    <div class="element halogen nonmetal   " data-symbol="F" data-category="halogen">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">F</h3>
+      <h2 class="name">Fluorine</h2>
+      <p class="weight">18.9984032</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Cf" data-category="actinoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cf</h3>
+      <h2 class="name">Californium</h2>
+      <p class="weight">(251)</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Ne" data-category="noble-gas">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ne</h3>
+      <h2 class="name">Neon</h2>
+      <p class="weight">20.1797</p>
+    </div>
+  
+    
+        
+    <div class="element other nonmetal   " data-symbol="P" data-category="other">
+       <p class="number"> <br></p>
+           
+      <h3 class="symbol">P</h3>
+      <h2 class="name">Phosphorus</h2>
+      <p class="weight">30.973762</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Fm" data-category="actinoid">
+      <p class="number"> <br></p>
+            
+      <h3 class="symbol">Fm</h3>
+      <h2 class="name">Fermium</h2>
+      <p class="weight">(257)</p>
+    </div>
+  
+    
+        
+    <div class="element other nonmetal   " data-symbol="S" data-category="other">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">S</h3>
+      <h2 class="name">Sulfur</h2>
+      <p class="weight">32.065</p>
+    </div>
+  
+    
+        
+    <div class="element alkaline-earth metal   " data-symbol="Ca" data-category="alkaline-earth">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ca</h3>
+      <h2 class="name">Calcium</h2>
+      <p class="weight">40.078</p>
+    </div>
+  
+    
+        
+    <div class="element other nonmetal   " data-symbol="C" data-category="other">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">C</h3>
+      <h2 class="name">Carbon</h2>
+      <p class="weight">12.0107</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="Rb" data-category="alkali">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Rb</h3>
+      <h2 class="name">Rubidium</h2>
+      <p class="weight">85.4678</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Uup" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uup</h3>
+      <h2 class="name">Ununpentium</h2>
+      <p class="weight">(288)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Sc" data-category="transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Sc</h3>
+      <h2 class="name">Scandium</h2>
+      <p class="weight">44.955912</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Ga" data-category="post-transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ga</h3>
+      <h2 class="name">Gallium</h2>
+      <p class="weight">69.723</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Tl" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Tl</h3>
+      <h2 class="name">Thallium</h2>
+      <p class="weight">204.3833</p>
+    </div>
+  
+    
+        
+    <div class="element metalloid   " data-symbol="Si" data-category="metalloid">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Si</h3>
+      <h2 class="name">Silicon</h2>
+      <p class="weight">28.0855</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Cd" data-category="transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cd</h3>
+      <h2 class="name">Cadmium</h2>
+      <p class="weight">112.411</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ti" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ti</h3>
+      <h2 class="name">Titanium</h2>
+      <p class="weight">47.867</p>
+    </div>
+  
+    
+        
+    <div class="element alkaline-earth metal   " data-symbol="Be" data-category="alkaline-earth">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Be</h3>
+      <h2 class="name">Beryllium</h2>
+      <p class="weight">9.012182</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="V" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">V</h3>
+      <h2 class="name">Vanadium</h2>
+      <p class="weight">50.9415</p>
+    </div>
+  
+    
+        
+    <div class="element metalloid   " data-symbol="Ge" data-category="metalloid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ge</h3>
+      <h2 class="name">Germanium</h2>
+      <p class="weight">72.64</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="Cs" data-category="alkali">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cs</h3>
+      <h2 class="name">Caesium</h2>
+      <p class="weight">132.9054519</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Ho" data-category="lanthanoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ho</h3>
+      <h2 class="name">Holmium</h2>
+      <p class="weight">164.93032</p>
+    </div>
+  
+    
+        
+    <div class="element alkaline-earth metal   " data-symbol="Ba" data-category="alkaline-earth">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ba</h3>
+      <h2 class="name">Barium</h2>
+      <p class="weight">137.327</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Hf" data-category="transition">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Hf</h3>
+      <h2 class="name">Hafnium</h2>
+      <p class="weight">178.49</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="He" data-category="noble-gas">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">He</h3>
+      <h2 class="name">Helium</h2>
+      <p class="weight">4.002602</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Cr" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cr</h3>
+      <h2 class="name">Chromium</h2>
+      <p class="weight">51.9961</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Mo" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Mo</h3>
+      <h2 class="name">Molybdenum</h2>
+      <p class="weight">95.96</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Lu" data-category="lanthanoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Lu</h3>
+      <h2 class="name">Lutetium</h2>
+      <p class="weight">174.9668</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="Li" data-category="alkali">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Li</h3>
+      <h2 class="name">Lithium</h2>
+      <p class="weight">6.941</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Pt" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pt</h3>
+      <h2 class="name">Platinum</h2>
+      <p class="weight">195.084</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Uuo" data-category="noble-gas">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uuo</h3>
+      <h2 class="name">Ununoctium</h2>
+      <p class="weight">(294)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Hg" data-category="transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Hg</h3>
+      <h2 class="name">Mercury</h2>
+      <p class="weight">200.59</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Tc" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Tc</h3>
+      <h2 class="name">Technetium</h2>
+      <p class="weight">(98)</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Cm" data-category="actinoid">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cm</h3>
+      <h2 class="name">Curium</h2>
+      <p class="weight">(247)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ag" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ag</h3>
+      <h2 class="name">Silver</h2>
+      <p class="weight">107.8682</p>
+    </div>
+  
+    
+        
+    <div class="element metalloid   " data-symbol="Sb" data-category="metalloid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Sb</h3>
+      <h2 class="name">Antimony</h2>
+      <p class="weight">121.76</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Yb" data-category="lanthanoid">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Yb</h3>
+      <h2 class="name">Ytterbium</h2>
+      <p class="weight">173.054</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Xe" data-category="noble-gas">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Xe</h3>
+      <h2 class="name">Xenon</h2>
+      <p class="weight">131.293</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="La" data-category="lanthanoid">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">La</h3>
+      <h2 class="name">Lanthanum</h2>
+      <p class="weight">138.90547</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ta" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ta</h3>
+      <h2 class="name">Tantalum</h2>
+      <p class="weight">180.94788</p>
+    </div>
+  
+    
+        
+    <div class="element metalloid   " data-symbol="Te" data-category="metalloid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Te</h3>
+      <h2 class="name">Tellurium</h2>
+      <p class="weight">127.6</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="W" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">W</h3>
+      <h2 class="name">Tungsten</h2>
+      <p class="weight">183.84</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Nd" data-category="lanthanoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Nd</h3>
+      <h2 class="name">Neodymium</h2>
+      <p class="weight">144.242</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Re" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Re</h3>
+      <h2 class="name">Rhenium</h2>
+      <p class="weight">186.207</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Kr" data-category="noble-gas">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Kr</h3>
+      <h2 class="name">Krypton</h2>
+      <p class="weight">83.798</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Sn" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Sn</h3>
+      <h2 class="name">Tin</h2>
+      <p class="weight">118.71</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="No" data-category="actinoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">No</h3>
+      <h2 class="name">Nobelium</h2>
+      <p class="weight">(259)</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Ac" data-category="actinoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ac</h3>
+      <h2 class="name">Actinium</h2>
+      <p class="weight">(227)</p>
+    </div>
+  
+    
+        
+    <div class="element halogen nonmetal   " data-symbol="Br" data-category="halogen">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Br</h3>
+      <h2 class="name">Bromine</h2>
+      <p class="weight">79.904</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ir" data-category="transition">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ir</h3>
+      <h2 class="name">Iridium</h2>
+      <p class="weight">192.217</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Lr" data-category="actinoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Lr</h3>
+      <h2 class="name">Lawrencium</h2>
+      <p class="weight">(262)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Os" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Os</h3>
+      <h2 class="name">Osmium</h2>
+      <p class="weight">190.23</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Rf" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Rf</h3>
+      <h2 class="name">Rutherfordium</h2>
+      <p class="weight">(267)</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Pb" data-category="post-transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pb</h3>
+      <h2 class="name">Lead</h2>
+      <p class="weight">207.2</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Pr" data-category="lanthanoid">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pr</h3>
+      <h2 class="name">Praseodymium</h2>
+      <p class="weight">140.90765</p>
+    </div>
+  
+    
+        
+    <div class="element other nonmetal   " data-symbol="N" data-category="other">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">N</h3>
+      <h2 class="name">Nitrogen</h2>
+      <p class="weight">14.0067</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Bi" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Bi</h3>
+      <h2 class="name">Bismuth</h2>
+      <p class="weight">208.9804</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Co" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Co</h3>
+      <h2 class="name">Cobalt</h2>
+      <p class="weight">58.933195</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ni" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ni</h3>
+      <h2 class="name">Nickel</h2>
+      <p class="weight">58.6934</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Rh" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Rh</h3>
+      <h2 class="name">Rhodium</h2>
+      <p class="weight">102.9055</p>
+    </div>
+  
+    
+        
+    <div class="element metalloid   " data-symbol="Po" data-category="metalloid">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Po</h3>
+      <h2 class="name">Polonium</h2>
+      <p class="weight">(209)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Pd" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pd</h3>
+      <h2 class="name">Palladium</h2>
+      <p class="weight">106.42</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="Fr" data-category="alkali">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Fr</h3>
+      <h2 class="name">Francium</h2>
+      <p class="weight">(223)</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Tm" data-category="lanthanoid">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Tm</h3>
+      <h2 class="name">Thulium</h2>
+      <p class="weight">168.93421</p>
+    </div>
+  
+    
+        
+    <div class="element alkaline-earth metal   " data-symbol="Ra" data-category="alkaline-earth">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ra</h3>
+      <h2 class="name">Radium</h2>
+      <p class="weight">(226)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Db" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Db</h3>
+      <h2 class="name">Dubnium</h2>
+      <p class="weight">(268)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Sg" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Sg</h3>
+      <h2 class="name">Seaborgium</h2>
+      <p class="weight">(271)</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="Na" data-category="alkali">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Na</h3>
+      <h2 class="name">Sodium</h2>
+      <p class="weight">22.98976928</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Rn" data-category="noble-gas">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Rn</h3>
+      <h2 class="name">Radon</h2>
+      <p class="weight">(222)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ru" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ru</h3>
+      <h2 class="name">Ruthenium</h2>
+      <p class="weight">101.07</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Al" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Al</h3>
+      <h2 class="name">Aluminium</h2>
+      <p class="weight">26.9815386</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Ds" data-category="transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ds</h3>
+      <h2 class="name">Darmstadtium</h2>
+      <p class="weight">(281)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Rg" data-category="transition">
+      
+            <p class="number"> <br></p>
+      <h3 class="symbol">Rg</h3>
+      <h2 class="name">Roentgenium</h2>
+      <p class="weight">(280)</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Uuq" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uuq</h3>
+      <h2 class="name">Ununquadium</h2>
+      <p class="weight">(289)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Cu" data-category="transition">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cu</h3>
+      <h2 class="name">Copper</h2>
+      <p class="weight">63.546</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Bh" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Bh</h3>
+      <h2 class="name">Bohrium</h2>
+      <p class="weight">(272)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Hs" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Hs</h3>
+      <h2 class="name">Hassium</h2>
+      <p class="weight">(270)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Mt" data-category="transition">
+    
+            <p class="number"> <br></p>
+      <h3 class="symbol">Mt</h3>
+      <h2 class="name">Meitnerium</h2>
+      <p class="weight">(276)</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Uuh" data-category="post-transition">
+     
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uuh</h3>
+      <h2 class="name">Ununhexium</h2>
+      <p class="weight">(293)</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Eu" data-category="lanthanoid">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Eu</h3>
+      <h2 class="name">Europium</h2>
+      <p class="weight">151.964</p>
+    </div>
+  
+    
+        
+    <div class="element halogen nonmetal   " data-symbol="Uus" data-category="halogen">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uus</h3>
+      <h2 class="name">Ununseptium</h2>
+      <p class="weight">(294)</p>
+    </div>
+  
+    
+        
+    <div class="element other nonmetal   " data-symbol="H" data-category="other">
+  
+            <p class="number"> <br></p>
+      <h3 class="symbol">H</h3>
+      <h2 class="name">Hydrogen</h2>
+      <p class="weight">1.00794</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Ce" data-category="lanthanoid">
+   
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ce</h3>
+      <h2 class="name">Cerium</h2>
+      <p class="weight">140.116</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Cn" data-category="transition">
+  
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cn</h3>
+      <h2 class="name">Copernicium</h2>
+      <p class="weight">(285)</p>
+    </div>
+  
+    
+        
+    <div class="element post-transition metal   " data-symbol="Uut" data-category="post-transition">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Uut</h3>
+      <h2 class="name">Ununtrium</h2>
+      <p class="weight">(284)</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Sm" data-category="lanthanoid">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">Sm</h3>
+      <h2 class="name">Samarium</h2>
+      <p class="weight">150.36</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Th" data-category="actinoid">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">Th</h3>
+      <h2 class="name">Thorium</h2>
+      <p class="weight">232.03806</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Pa" data-category="actinoid">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pa</h3>
+      <h2 class="name">Protactinium</h2>
+      <p class="weight">231.03588</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Tb" data-category="lanthanoid">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Tb</h3>
+      <h2 class="name">Terbium</h2>
+      <p class="weight">158.92535</p>
+    </div>
+  
+    
+        
+    <div class="element lanthanoid metal inner-transition   " data-symbol="Dy" data-category="lanthanoid">
+  
+            <p class="number"> <br></p>
+      <h3 class="symbol">Dy</h3>
+      <h2 class="name">Dysprosium</h2>
+      <p class="weight">162.5</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Np" data-category="actinoid">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">Np</h3>
+      <h2 class="name">Neptunium</h2>
+      <p class="weight">(237)</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Pu" data-category="actinoid">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">Pu</h3>
+      <h2 class="name">Plutonium</h2>
+      <p class="weight">(244)</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Au" data-category="transition">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Au</h3>
+      <h2 class="name">Gold</h2>
+      <p class="weight">196.966569</p>
+    </div>
+  
+    
+        
+    <div class="element transition metal   " data-symbol="Mn" data-category="transition">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Mn</h3>
+      <h2 class="name">Manganese</h2>
+      <p class="weight">54.938045</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Es" data-category="actinoid">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Es</h3>
+      <h2 class="name">Einsteinium</h2>
+      <p class="weight">(252)</p>
+    </div>
+  
+    
+        
+    <div class="element actinoid metal inner-transition   " data-symbol="Md" data-category="actinoid">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">Md</h3>
+      <h2 class="name">Mendelevium</h2>
+      <p class="weight">(258)</p>
+    </div>
+  
+    
+        
+    <div class="element halogen nonmetal   " data-symbol="Cl" data-category="halogen">
+  
+            <p class="number"> <br></p>
+      <h3 class="symbol">Cl</h3>
+      <h2 class="name">Chlorine</h2>
+      <p class="weight">35.453</p>
+    </div>
+  
+    
+        
+    <div class="element noble-gas nonmetal   " data-symbol="Ar" data-category="noble-gas">
+ 
+            <p class="number"> <br></p>
+      <h3 class="symbol">Ar</h3>
+      <h2 class="name">Argon</h2>
+      <p class="weight">39.948</p>
+    </div>
+  
+    
+        
+    <div class="element alkali metal   " data-symbol="K" data-category="alkali">
+  
+            <p class="number"> <br></p>
+      <h3 class="symbol">K</h3>
+      <h2 class="name">Potassium</h2>
+      <p class="weight">39.0983</p>
+    </div>
+  
+    
+        
+    <div class="element halogen nonmetal   " data-symbol="I" data-category="halogen">
+
+            <p class="number"> <br></p>
+      <h3 class="symbol">I</h3>
+      <h2 class="name">Iodine</h2>
+      <p class="weight">126.90447</p>
+    </div>
